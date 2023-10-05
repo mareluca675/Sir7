@@ -1,0 +1,22 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    long long n, k, x, i;
+    cin >> n >> k;
+    x = n;
+    
+    if(k % 2 == 0)
+    {
+        x = x + (k / 2) * 10 + ((k - 2) / 2) * 20;
+    }
+    else if(k % 2 == 1)
+    {
+        x = x + (k / 2) * 10 + (k / 2) * 20;
+    }
+    
+    cout << x;
+    return 0;
+}
